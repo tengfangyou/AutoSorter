@@ -20,7 +20,6 @@ AutoSorter/
 └── README.md # 本文件
 
 yaml
-複製程式碼
 
 ---
 
@@ -35,30 +34,34 @@ cd AutoSorter
 建立虛擬環境並啟用
 
 bash
-複製程式碼
+
 python -m venv venv
 venv\Scripts\activate
 安裝必要套件（目前空）
 
 bash
-複製程式碼
+
 pip install -r requirements.txt
 設定下載資料夾路徑
 打開 sorter.py，把 DOWNLOAD_DIR 改成你的實際路徑，例如：
 
 python
-複製程式碼
+
 DOWNLOAD_DIR = r"C:\Users\<你的使用者名稱>\Downloads"
 編輯 config.json 規則（可直接用下方範例）
 
 執行
 
 bash
-複製程式碼
+
 python sorter.py
+
+
+
+
 🧩 config.json 範例
 json
-複製程式碼
+
 {
   "Images":   ["jpg", "jpeg", "png", "gif", "bmp", "webp"],
   "Videos":   ["mp4", "mov", "avi", "mkv"],
